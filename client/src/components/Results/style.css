@@ -1,0 +1,12 @@
+.card-body {
+    width: 540px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+p {
+    font-size: 12px;
+}
