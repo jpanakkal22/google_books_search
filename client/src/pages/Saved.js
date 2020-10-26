@@ -34,7 +34,8 @@ function Saved() {
             author={book.author}
             description={book.description}
             image={book.image}    
-            link={book.link}                
+            link={book.link}
+            buttonName="Remove"                
             />
         })}                
        </div>    
