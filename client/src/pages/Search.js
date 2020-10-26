@@ -27,9 +27,7 @@ function Search() {
   }; 
   
   return (
-    
-  <Container>
-    <Nav />
+    <div>
     <Row>
       <Col size="md-12">
         <form>
@@ -79,7 +77,7 @@ function Search() {
         )}
       </Col>
     </Row>
-  </Container> 
+  </div>
 )   
 }
 

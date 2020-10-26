@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
@@ -10,10 +11,29 @@ function Nav() {
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Search <span class="sr-only">(current)</span></a>
+          <Link
+              to="/"
+              className={
+                window.location.pathname === "/" || window.location.pathname === "/search"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+            >
+              Search
+            </Link>
+
+
+
+            {/* <a class="nav-link" href="#">Search <span class="sr-only">(current)</span></a> */}
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Saved</a>
+          <Link
+              to="/saved"
+              className={window.location.pathname === "/saved" ? "nav-link active" : "nav-link"}
+            >
+              Saved
+            </Link>
+            {/* <a class="nav-link" href="#">Saved</a> */}
           </li>
         </ul>
       </div>
