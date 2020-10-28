@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
 import API from "../utils/API";
-// import Nav from "../components/Nav";
-// import Wrapper from "../components/Wrapper";
 import Results from "../components/Results";
-import { Container } from "../components/Grid";
-
 
 function Saved() {
     const [books, setBooks] = useState([]);
@@ -20,9 +16,7 @@ function Saved() {
         .then(res => {
             setBooks(res.data)
             console.log(res.data)
-        }
-           
-        )
+        })
         .catch(err => console.log(err));
     };
 
@@ -30,12 +24,14 @@ function Saved() {
        <div>       
         {books.map(book => {
             return <Results 
+            id={book._id}
             title={book.title}
             author={book.author}
             description={book.description}
             image={book.image}    
             link={book.link}
-            buttonName="Remove"                
+            buttonName="Remove" 
+            load={loadBooks}               
             />
         })}                
        </div>    

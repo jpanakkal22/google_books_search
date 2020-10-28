@@ -1,10 +1,12 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Jumbotron from "./components/Jumbotron";
 import Nav from "./components/Nav";
+import Wrapper from "./components/Wrapper";
 import Search from "./pages/Search";
 import "./App.css";
 import Saved from "./pages/Saved";
-import Wrapper from "./components/Wrapper";
+
 
 
 function App() {
@@ -12,6 +14,7 @@ function App() {
   <Router>
     <div>
       <Nav />
+      <Jumbotron />      
       <Wrapper>
       <Route exact path="/" component={Search} />
       <Route exact path="/search" component={Search} />

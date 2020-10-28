@@ -1,0 +1,13 @@
+#Navbar {
+    background-color: #e3f2fd;
+}
+#navbarBrand {
+    color: #2196F3;
+    text-shadow: 2px 2px 5px darkgray;
+    font-size: 24px;
+}
+
+.textColor {
+    color: #2196F3;
+    font-weight: 700;
+}

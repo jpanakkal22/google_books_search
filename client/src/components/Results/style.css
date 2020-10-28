@@ -7,6 +7,26 @@ img {
     height: 200px;
 }
 
-p {
+#pCard {
     font-size: 12px;
+}
+
+a.badge-pill {
+    background-color: deepskyblue;
+    color: white;   
+}
+
+a.badge-pill:hover {
+    background-color:#2196F3;
+    color: white;   
+}
+
+button.badge-pill {
+    background-color: deepskyblue;
+    color: white;   
+}
+
+button.badge-pill:hover {
+    background-color:#2196F3;
+    color: white; 
 }
