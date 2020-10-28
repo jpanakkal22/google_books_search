@@ -3,7 +3,7 @@
 ## Description
 This application uses React to search the Google Books API for a book of interest and display it to the page. A user can then either view the book on Google Books, save the book to a MongoDB database, and remove the selected book form the database. 
 
-![Google Book Search](./Img/google_books.PNG)
+![Employee Directory](/client/public/Img/google_books_A.PNG)
 
 ## Table of Contents
 
