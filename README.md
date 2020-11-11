@@ -1,7 +1,7 @@
 # React: Google Books Search
 
 ## Description
-This application uses React to search the Google Books API for a book of interest and display it to the page. A user can then either view the book on Google Books, save the book to a MongoDB database, and remove the selected book form the database. 
+This application is full stack using a React UI with Bootstrap styling, Node.js, Express and MongoDB. A user can search for a book using the Google Books API, save the book to a database, or remove the saved book from the list. 
 
 ![Employee Directory](/client/public/Img/google_books_A.PNG)
 
@@ -19,7 +19,7 @@ This application uses React to search the Google Books API for a book of interes
 Clone the repository to your code editor. Run npm install to get the required dependencies, and then npm start to begin the applicaiton.  
 
 ## Usage
-Search and save books that you enjoy!
+Search for books on Google Books and save the ones that you like!
 
 ## License
 N/A
@@ -38,4 +38,4 @@ N/A
 
 You can also contact me at josh_panakkal3122@hotmail.com
 
-GitHub Pages: 
+Heroku: https://fast-eyrie-18349.herokuapp.com/ 
