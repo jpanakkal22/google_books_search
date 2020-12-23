@@ -1,0 +1,12 @@
+.jumbotron {   
+    background-image:url('./Img/pexels-wendy-van-zyl-1112048.jpg'); 
+    height: 50vh;       
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    position: relative; 
+    font-family: 'Audiowide', cursive;
+    letter-spacing: 3px;  
+    box-shadow: -10px 10px 10px #555;          
+}
