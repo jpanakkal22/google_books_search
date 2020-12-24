@@ -7,7 +7,7 @@ function JmboTron() {
     return (
         <Jumbotron fluid>
             <Container className="d-flex flex-column justify-content-center text-center pt-5">
-                <h1 className="display-4">Google Books Search</h1>
+                <h1 className="display-4" id="jTronH1">Google Books Search</h1>
                 <p className="lead" id="lead">Search the world's most comprehensive index of full-text books.</p>
             </Container>
         </Jumbotron>           
