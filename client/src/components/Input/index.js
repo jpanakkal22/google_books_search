@@ -1,13 +1,33 @@
 import React from "react";
+import { Row, Col } from 'react-bootstrap/';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import "./style.css";
 
-// This component lets us use a bootstrap input element without worrying about class names
-// or manually wrapping the input with a form-group div
-// All of the props passed to this component are spread onto the input element
 function Input(props) {
-  return (
-    <div className="input-group input-group-lg">
-      <input className="form-control" type="text" {...props} />
-    </div>
+  return (    
+    <Form>       
+      <Row>
+        <Col sm={10}>
+        <Form.Group controlId="formBasicSearch">                
+        <Form.Control
+          id="formInput"
+          size="lg" 
+          name={props.name}
+          value={props.value}
+          onChange={props.onChange}
+          placeholder={props.placeholder}
+        />  
+        </Form.Group>
+        </Col>
+        <Col sm={2}>
+        <Button variant="primary" onClick={props.onClick} id="formButton">
+          Submit
+        </Button>
+        </Col>
+      </Row>
+      
+    </Form>
   );
 }
 
