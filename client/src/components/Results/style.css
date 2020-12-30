@@ -1,32 +1,9 @@
-.card-body {
-    width: 540px;
+/* Card margin top and bottom margin*/
+.card {
+    margin: 20px 0 20px 0;
 }
 
-img {
-    width: 200px;
-    height: 200px;
-}
-
-#pCard {
-    font-size: 12px;
-}
-
-a.badge-pill {
-    background-color: deepskyblue;
-    color: white;   
-}
-
-a.badge-pill:hover {
-    background-color:#2196F3;
-    color: white;   
-}
-
-button.badge-pill {
-    background-color: deepskyblue;
-    color: white;   
-}
-
-button.badge-pill:hover {
-    background-color:#2196F3;
-    color: white; 
+/* Card image height */
+.card > .card-img-top {
+    height: 300px;
 }
