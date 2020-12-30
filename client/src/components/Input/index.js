@@ -11,7 +11,6 @@ function Input(props) {
         <Col sm={10}>
         <Form.Group controlId="formBasicSearch">                
         <Form.Control
-          id="formInput"
           size="lg" 
           name={props.name}
           value={props.value}
@@ -25,8 +24,7 @@ function Input(props) {
           Submit
         </Button>
         </Col>
-      </Row>
-      
+      </Row>      
     </Form>
   );
 }
