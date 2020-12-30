@@ -1,4 +1,6 @@
 import React from "react";
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 import API from "../../utils/API";
 import "./style.css";
 
@@ -29,25 +31,16 @@ function Results(props){
         }
     }     
 
-    return (          
-        <div className="card m-4">
-            <div className="row">
-                <div className="col-md-2">
-                    <img alt="..." className="img-fluid" src={props.image} />
-                </div>
-                <div className="col-md-10">
-                    <div className="card-body">
-                        <h5 className="card-title">{props.title} by {props.author}</h5>
-                        <p className="card-text" id="pCard">{props.description}</p>
-                        <div>
-                            <a href={props.link} className="btn badge-pill mt-3" target="_blank" rel="noopener noreferrer">View</a>
-                            <button onClick={handleFormSubmit} className="btn badge-pill mt-3 ml-3">{props.buttonName}</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-              
+    return (       
+        <Card style={{ width: '18rem' }}>
+            <Card.Img variant="top" src={props.image} alt={props.title}/>
+            <Card.Body>
+                <Card.Title>{props.title}</Card.Title>
+                <Card.Text>This is placeholder text. This is placeholder text. This is placeholder text.</Card.Text>
+                <Card.Link href={props.link} target="_blank" rel="noopener noreferrer">View</Card.Link>
+                <Button variant="primary" onClick={handleFormSubmit}>{props.buttonName}</Button>
+            </Card.Body>
+        </Card>             
     )
 }
 
