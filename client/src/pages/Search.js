@@ -52,8 +52,8 @@ function Search() {
                 <Results 
                   key={book.id} 
                   title={book.volumeInfo.title}
-                  authors={!book.volumeInfo.authors || book.volumeInfo.authors.length == 0 ? 
-                  "No Authors" : "By: " + book.volumeInfo.authors.join(', ')}
+                  authors={!book.volumeInfo.authors || book.volumeInfo.authors.length === 0 ? 
+                  "No Authors Given" : "By: " + book.volumeInfo.authors.join(', ')}
                   image={book.volumeInfo.imageLinks.smallThumbnail}
                   link={book.volumeInfo.infoLink}
                   buttonName="Save"
