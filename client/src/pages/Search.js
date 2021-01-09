@@ -20,8 +20,8 @@ function Search() {
   const handleFormSubmit = event => {
     event.preventDefault();
     API.search(formInput)
-      .then(res => setBooks(res.data.items))
-      .catch(err => console.log(err));
+    .then(res => setBooks(res.data.items))
+    .catch(err => console.log(err));
   }; 
   
   return (
@@ -46,20 +46,18 @@ function Search() {
             </Col>
           </Row>
         ) : (
-          <Row>            
-            {books.map(book => {
-              return (
-                <Col sm={4} className="d-flex justify-content-center">
-                  <Results 
-                    key={book.id} 
-                    title={book.volumeInfo.title}
-                    author={book.volumeInfo.authors}
-                    image={book.volumeInfo.imageLinks.smallThumbnail}
-                    description={book.volumeInfo.description}
-                    link={book.volumeInfo.infoLink}
-                    buttonName="Save"
-                  />
-                </Col>
+          <Row className="d-flex justify-content-center">            
+            {books.map(book => {     
+              return (                
+                <Results 
+                  key={book.id} 
+                  title={book.volumeInfo.title}
+                  authors={!book.volumeInfo.authors || book.volumeInfo.authors.length == 0 ? 
+                  "No Authors" : "By: " + book.volumeInfo.authors.join(', ')}
+                  image={book.volumeInfo.imageLinks.smallThumbnail}
+                  link={book.volumeInfo.infoLink}
+                  buttonName="Save"
+                />                      
               )
             })}            
           </Row>          
