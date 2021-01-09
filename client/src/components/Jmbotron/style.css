@@ -8,7 +8,7 @@
     position: relative; 
     font-family: 'Audiowide', cursive;
     letter-spacing: 3px;  
-    box-shadow: -10px 10px 10px #555;          
+    box-shadow: 0 0 30px 0 #ff0000;          
 }
 
 /*Media query to resize h1 at max-width of 575px*/
