@@ -1,5 +1,6 @@
 .navbar {
-    background: #cd5c5c;        
+    background: linear-gradient(45deg, black, red); 
+    text-shadow: 1px 1px 1px black;      
 }
 
 #brand {
@@ -8,5 +9,9 @@
 
 #links > .nav-link {
     color: #ffffff;
+}
+
+#links > .nav-link:hover {
+    text-decoration: underline;
 }
 
