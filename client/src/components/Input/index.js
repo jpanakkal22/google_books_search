@@ -11,7 +11,6 @@ function Input(props) {
         <Col sm={10}>
         <Form.Group controlId="formBasicSearch">                
         <Form.Control
-          size="lg" 
           name={props.name}
           value={props.value}
           onChange={props.onChange}
@@ -20,8 +19,8 @@ function Input(props) {
         </Form.Group>
         </Col>
         <Col sm={2}>
-        <Button variant="primary" onClick={props.onClick} id="formButton">
-          Submit
+        <Button variant="danger" onClick={props.onClick} id="formButton">
+          Search
         </Button>
         </Col>
       </Row>      
