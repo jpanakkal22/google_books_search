@@ -3,7 +3,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import "./style.css";
 
-function JmboTron() {
+const JmboTron = () => {
     return (
         <Jumbotron fluid>
             <Container className="d-flex flex-column justify-content-center text-center pt-5">

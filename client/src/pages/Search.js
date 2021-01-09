@@ -6,7 +6,7 @@ import Results from "../components/Results";
 import API from "../utils/API";
 import "./style.css";
 
-function Search() {
+const Search = () => {
   // Setting our component's initial state
   const [books, setBooks] = useState([])
   const [formInput, setFormInput] = useState("");

@@ -4,7 +4,7 @@ import API from "../utils/API";
 import Results from "../components/Results";
 import "./style.css";
 
-function Saved() {
+const Saved = () => {
     const [books, setBooks] = useState([]);
 
     // Load all books and store them with setBooks
@@ -13,7 +13,7 @@ function Saved() {
     }, [])
 
     // Loads all books and sets them to books
-    function loadBooks() {
+    const loadBooks = () => {
         API.getBooks()
         .then(res => setBooks(res.data))
         .catch(err => console.log(err));

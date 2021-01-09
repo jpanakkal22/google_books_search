@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import "./style.css";
 
-function Navigation() {
+const Navigation = () => {
   return (
     <Navbar expand="lg">
       <Navbar.Brand href="/" id="brand">Google Books Search</Navbar.Brand>

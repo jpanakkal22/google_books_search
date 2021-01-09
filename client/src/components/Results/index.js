@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import API from "../../utils/API";
 import "./style.css";
 
-function Results(props){
+const Results = (props) => {
     
     const handleFormSubmit = event => {
         event.preventDefault();
