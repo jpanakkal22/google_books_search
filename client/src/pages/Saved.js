@@ -29,7 +29,7 @@ function Saved() {
                         id={book._id}
                         key={book._id} 
                         title={book.title}
-                        author={book.author}
+                        authors={book.author}
                         image={book.image}    
                         link={book.link}
                         buttonName="Remove" 
