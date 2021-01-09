@@ -1,0 +1,15 @@
+#savedH1 {
+    color: #ffffff;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: 5px 5px 5px #cd5c5c;
+    letter-spacing: 3px;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+}
+
+h2 {
+    color: #ffffff;
+    text-shadow: 5px 5px 5px #cd5c5c;   
+}
