@@ -1,9 +1,28 @@
 /* Card margin top and bottom margin*/
 .card {
-    margin: 20px 0 20px 0;
+    margin: 22px;               
 }
 
 /* Card image height */
 .card > .card-img-top {
-    height: 300px;
+    height: 200px;
 }
+
+.card-title {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.card-footer {
+    background: linear-gradient(45deg, black, red);
+}
+
+/* Card buttons */
+button.btn.btn-link {
+    color: #ffffff;
+    font-weight: bold;    
+    margin-right: 5px;
+    text-shadow: 1px 1px 1px black;   
+}
+
+
