@@ -9,12 +9,11 @@ function Results(props){
     const handleFormSubmit = event => {
         event.preventDefault();
     
-        if(props.buttonName === "Save"){           
+        if(props.buttonName === "Save"){                   
         // Save selected book to database
         API.saveBook({
             title: props.title,
-            author: props.author[0],
-            description: props.description,
+            author: props.authors,           
             image: props.image,
             link: props.link
         })
