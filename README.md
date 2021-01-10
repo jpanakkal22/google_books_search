@@ -4,6 +4,7 @@
 This application is full stack using a React UI with Bootstrap styling, Node.js, Express and MongoDB. A user can search for a book using the Google Books API, save the book to a database, or remove the saved book from the list. 
 
 ![Google Books Search](/client/public/Img/google_books.PNG)
+
 ![Google Books Saved Searches](/client/public/Img/google_books_A.PNG)
 
 ## Table of Contents
